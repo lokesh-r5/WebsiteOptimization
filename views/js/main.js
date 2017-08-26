@@ -438,7 +438,7 @@ var resizePizzas = function(size) {
     }
     // New for loop to set the width of the containers(to avoid rendering again and paint).
     for (var j = 0; j < pizzaLength; j++) {
-     randomPizzaContainer[i].style.width = newwidth[i];
+     randomPizzaContainer[j].style.width = newwidth[j];
     }
   }
 
