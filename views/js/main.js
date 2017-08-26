@@ -362,7 +362,7 @@ var pizzaElementGenerator = function(i) {
   pizzaImage.classList.add("img-responsive");
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
-  pizzaDescriptionContainer.style.width="65%"
+  pizzaDescriptionContainer.style.width="65%";
 
   pizzaName = document.createElement("h4");
   pizzaName.innerHTML = randomName();
@@ -437,7 +437,7 @@ var resizePizzas = function(size) {
       newwidth[i] = (randomPizzaContainer[i].offsetWidth + dx) + 'px';
     }
     // New for loop to set the width of the containers(to avoid rendering again and paint).
-    for (var i = 0; i < pizzaLength; i++) {
+    for (var j = 0; j < pizzaLength; j++) {
      randomPizzaContainer[i].style.width = newwidth[i];
     }
   }
