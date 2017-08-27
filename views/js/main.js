@@ -516,7 +516,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var s = 256;
   // Calculated number of pizzas required
   var numOfPizzas = (window.innerHeight / 256) * (window.innerWidth / (256-73.33));
-  for (var i = 0; i < pizzaNum; i++) {
+  for (var i = 0; i < numOfPizzas; i++) {
   var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
